@@ -1,0 +1,7 @@
+<a href="{% url 'upload_form' %}">업로드</a>
+{% for file in profile %}
+<h1> {{file.title}} </h1>
+<img src="{{ file.image.url }}">
+<p> {{file.body}} </p>
+<br><br>
+{% endfor %}
